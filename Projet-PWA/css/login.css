@@ -1,0 +1,181 @@
+html {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	height: 100%;
+	color: #999;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(243, 190, 31);
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+header {
+	padding: 20px 0 0 50px;
+	background-color: #3c6084;
+}
+
+header #brand img {
+	height: 45px;
+}
+
+footer {
+	background-color: rgba(0,0,0,.7);
+	padding: 30px;
+	margin-top: 100px;
+}
+
+footer p {
+	margin-top: 0;
+}
+
+footer a {
+	font-size: 0.7em;
+	color: #999;
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section {
+	flex-grow: 1;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 30px 0;
+}
+
+input {
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	color: white;
+	border-bottom: solid white 2px;
+	background-color: rgb(15, 93, 141);
+	
+	margin-bottom: 15px;
+	border-top: hidden;
+	border-left: hidden;
+	border-right: hidden;
+}
+
+::placeholder{
+	color: white;
+}
+
+button {
+	background-color: rgb(243, 190, 31);
+	color: black;
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
+#remind-me {
+	color: white;
+	margin-top: 10px;
+	font-size: 0.9em;
+	width: auto;
+	margin-right: 15px;
+}
+
+#login-body {
+	max-width: 450px;
+	background-color: rgb(15, 93, 141);
+	color: white;
+	padding: 50px;
+	margin: 200px auto;
+}
+
+#register-body {
+	max-width: 450px;
+	background-color: rgb(15, 93, 141);
+	color: white;
+	padding: 50px;
+	margin: 100px auto;
+}
+
+.grey {
+	color: white;
+}
+
+.alert {
+	padding: 10px;
+	margin: 30px 0;
+	color: white;
+	
+}
+.error {
+	background-color: red;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+#burger{
+	display: block;
+	padding-left: 5px;
+}
+nav{
+	display: none;
+}
+nav ul{
+	width: 77%;
+	z-index: 1;
+	flex-direction: column;
+	background-color: #3c6084df;
+	position: absolute;
+	right: 0;
+}
+nav ul li{
+	padding: 25px;
+}
+nav ul li a{
+	font-size: 20px;
+}
+
+@media all and (max-width: 1030px) {
+	.container { width: 800px; }
+	#register-body{
+		margin: 18px auto;
+	}
+}
+
+@media all and (max-width: 830px) {
+	.container { width: 580px; }
+	header { text-align: center; padding-left: 20px; }
+	#login-body {
+		margin: 10px auto;
+	}
+}
+
